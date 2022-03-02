@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  cat-card-application:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    container_name: api
+
+
+         
